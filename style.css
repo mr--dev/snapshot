@@ -1,0 +1,96 @@
+@media screen {
+
+    h1 { text-align: center; }
+    hr { margin-bottom: 30px; }
+
+    #container {
+      position: absolute;
+      margin-left: 15%;
+      width: 70%;
+    }
+    .left {
+      float: left;
+    }
+    .rigth {
+      float: right;
+    }
+
+    /*
+     * VIDEO DIMENSION 
+     * width = 640
+     * height = 480
+     */ 
+
+    #preview-dimension {
+      position: absolute;
+      top: 20px;
+      left: 77px;
+      border: 2px solid red;
+    }
+    #screenshot {
+      border: 5px dashed black;
+    }
+    .photo {
+      width: 165px;
+      height: 200px;
+    }
+
+    .video {
+      width: 320px;
+      height: 240px;
+      border: 1px solid black;
+    }
+
+    #print {
+      display: none;
+    }
+}
+
+@media print {
+    #container { display: none }
+
+    .print-photo {
+      border: 1px solid black;
+      margin: 25px;
+      display: inline-block;
+      /*width: 165px;
+      height: 200px;*/
+      width: 94pt;
+      height: 114pt;
+    }
+}
+
+@media print, screen {
+
+    /* CSS FILTER */
+    .blur {
+      -webkit-filter: blur(3px);
+    }
+    .brightness {
+      -webkit-filter: brightness(5);
+    }
+    .contrast {
+      -webkit-filter: contrast(8);
+    }
+    .hue-rotate {
+      -webkit-filter: hue-rotate(90deg);
+    }
+    .hue-rotate2 {
+      -webkit-filter: hue-rotate(180deg);
+    }
+    .hue-rotate3 {
+      -webkit-filter: hue-rotate(270deg);
+    }
+    .saturate {
+      -webkit-filter: saturate(10);
+    }
+    .grayscale {
+      -webkit-filter: grayscale(1);
+    }
+    .sepia {
+      -webkit-filter: sepia(1);
+    }
+    .invert {
+      -webkit-filter: invert(1)
+    }
+}
